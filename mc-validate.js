@@ -191,7 +191,7 @@
 		 *	Grab the list subscribe url from the form action and make it work for an ajax post.
          */
 		getAjaxSubmitUrl: function() {
-			var url = $("#mc-embedded-subscribe-form").attr("action");
+			var url = window.mcFormUrl;
 			url = url.replace("/post?u=", "/post-json?u=");
 			url += "&c=?";
 			return url;
